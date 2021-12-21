@@ -1,10 +1,12 @@
-FROM httpd
+FROM ubuntu
 
 MAINTAINER naveenrayapati538@gmail.com
 
-RUN sudo apt install apache2 -y
+RUN sudo apt-get update
+
+RUN sudo apt-get install nginx -y
 
 EXPOSE 80
 
-CMD apachectl -D FOREGROUND 
+CMD service nginx start
 
