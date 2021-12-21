@@ -1,9 +1,10 @@
-# getting base image ubuntu
-FROM ubuntu
+FROM httpd
 
 MAINTAINER naveenrayapati538@gmail.com
 
-RUN apt-get update
+RUN sudo apt install apache2 -y
 
-CMD ["echo", "Hello world..! from my docker image "]
+EXPOSE 80
+
+CMD apachectl -D FOREGROUND 
 
