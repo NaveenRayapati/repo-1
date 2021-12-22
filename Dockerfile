@@ -8,7 +8,7 @@ RUN apt-get install nginx -y
 
 EXPOSE 80
 
-COPY /repo-1/index.html /var/www/html
+COPY index.html /var/www/html
 
 CMD service nginx start
 
