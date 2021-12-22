@@ -2,11 +2,11 @@ FROM ubuntu
 
 MAINTAINER naveenrayapati538@gmail.com
 
-RUN sudo apt-get update
+RUN apt-get update
 
-RUN sudo apt-get install nginx -y
+RUN apt-get install nginx -y
 
-RUN sudo git clone https://github.com/NaveenRayapati/repo-1.git
+RUN git clone https://github.com/NaveenRayapati/repo-1.git
 
 EXPOSE 80
 
