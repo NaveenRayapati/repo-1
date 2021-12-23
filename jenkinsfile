@@ -2,7 +2,7 @@ pipeline {
   environment {
     registry = "cloud-build-project-335402/myimage"
     registryCredential = 'cloud-build-project-335402'
-    dockerImage = ''
+    dockerImage = 'myimage'
   }
   agent any
   stages {
