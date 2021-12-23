@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "https://us.gcr.io"
+    registry = "rayapatinaveen123/repo-1"
     registryCredential = 'cloud-build-project-335402'
     dockerImage = ''
   }
