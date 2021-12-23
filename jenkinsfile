@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "rayapatinaveen123/repo-1"
+    registry = "cloud-build-project-335402/myimage"
     registryCredential = 'cloud-build-project-335402'
     dockerImage = ''
   }
@@ -14,7 +14,7 @@ pipeline {
     stage('Building image') {
       steps{
         script {
-          dockerImage = docker.build registry + ":$BUILD_NUMBER"
+          dockerImage = docker.build registry
         }
       }
     }
