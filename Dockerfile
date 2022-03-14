@@ -6,7 +6,7 @@ RUN apt-get update
 
 RUN apt-get install nginx -y
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD service nginx start
 
